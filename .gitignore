@@ -49,3 +49,4 @@ logs
 
 # husky
 .husky/_
+.vercel

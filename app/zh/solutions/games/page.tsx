@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { ArrowLeft, Globe, Gamepad2, Zap, Users, CheckCircle, Star, Brain, Target, Sparkles, Workflow, Rocket, Shield, PlayCircle } from "lucide-react"
+import { NavLogo, FooterLogo } from "@/components/logo"
 import Link from "next/link"
 import { motion } from "framer-motion"
 
@@ -226,12 +227,7 @@ export default function AIGamesZH() {
       <nav className="fixed top-0 w-full bg-white/80 backdrop-blur-md border-b border-gray-200 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
-            <div className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg flex items-center justify-center">
-                <Gamepad2 className="w-5 h-5 text-white" />
-              </div>
-              <span className="text-xl font-bold text-gray-900">LuckyMobi</span>
-            </div>
+            <NavLogo />
 
             <div className="hidden md:flex items-center space-x-8">
               <Link href="/zh#home" className="text-gray-700 hover:text-blue-600 transition-colors">
@@ -325,6 +321,14 @@ export default function AIGamesZH() {
             >
               <Card className="h-full hover:shadow-xl transition-shadow duration-300">
                 <CardHeader>
+                  <div className="relative w-full h-48 mb-4 rounded-lg overflow-hidden">
+                    <img
+                      src="/images/yinqing.png"
+                      alt="自适应游戏引擎"
+                      className="w-full h-full object-cover"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                  </div>
                   <CardTitle className="flex items-center">
                     <Brain className="w-6 h-6 mr-3 text-purple-600" />
                     {t.adaptiveGameplay.title}
@@ -353,6 +357,14 @@ export default function AIGamesZH() {
             >
               <Card className="h-full hover:shadow-xl transition-shadow duration-300">
                 <CardHeader>
+                  <div className="relative w-full h-48 mb-4 rounded-lg overflow-hidden">
+                    <img
+                      src="/images/juese.png"
+                      alt="智能NPC与角色"
+                      className="w-full h-full object-cover"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                  </div>
                   <CardTitle className="flex items-center">
                     <Users className="w-6 h-6 mr-3 text-pink-600" />
                     {t.intelligentNPCs.title}
@@ -381,6 +393,14 @@ export default function AIGamesZH() {
             >
               <Card className="h-full hover:shadow-xl transition-shadow duration-300">
                 <CardHeader>
+                  <div className="relative w-full h-48 mb-4 rounded-lg overflow-hidden">
+                    <img
+                      src="/images/shengcheng.png"
+                      alt="程序化内容生成"
+                      className="w-full h-full object-cover"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                  </div>
                   <CardTitle className="flex items-center">
                     <Sparkles className="w-6 h-6 mr-3 text-indigo-600" />
                     {t.proceduralGeneration.title}
@@ -409,6 +429,14 @@ export default function AIGamesZH() {
             >
               <Card className="h-full hover:shadow-xl transition-shadow duration-300">
                 <CardHeader>
+                  <div className="relative w-full h-48 mb-4 rounded-lg overflow-hidden">
+                    <img
+                      src="/images/fenxi.png"
+                      alt="高级玩家分析"
+                      className="w-full h-full object-cover"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                  </div>
                   <CardTitle className="flex items-center">
                     <Target className="w-6 h-6 mr-3 text-orange-600" />
                     {t.playerAnalytics.title}
@@ -544,42 +572,116 @@ export default function AIGamesZH() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-purple-600 to-pink-600">
-        <div className="max-w-7xl mx-auto text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-          >
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">{t.ctaTitle}</h2>
-            <p className="text-xl text-purple-100 mb-8 max-w-3xl mx-auto">{t.ctaDescription}</p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" variant="secondary" className="bg-white text-purple-600 hover:bg-gray-100">
-                {t.earlyAccess}
-                <Rocket className="ml-2 w-5 h-5" />
-              </Button>
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-purple-600">
-                {t.joinCommunity}
-                <Users className="ml-2 w-5 h-5" />
-              </Button>
+      {/* Footer */}
+      <footer className="bg-gray-900 text-white py-12 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div className="col-span-1 md:col-span-2">
+              <div className="mb-4">
+                <FooterLogo />
+              </div>
+              <p className="text-gray-400 mb-4 max-w-md">
+                AI驱动创新，连接无限可能。赋能智能生活，构筑数字未来。
+              </p>
+              <div className="flex space-x-4">
+                <Button variant="ghost" size="sm" className="text-gray-400 hover:text-white">
+                  <span className="text-lg">✉️</span>
+                </Button>
+                <Button variant="ghost" size="sm" className="text-gray-400 hover:text-white">
+                  LinkedIn
+                </Button>
+                <Button variant="ghost" size="sm" className="text-gray-400 hover:text-white">
+                  Twitter
+                </Button>
+              </div>
             </div>
-          </motion.div>
-        </div>
-      </section>
 
-      {/* Back to Home Button */}
-      <div className="bg-white py-8">
-        <div className="text-center">
-          <Link href="/zh">
-            <Button size="lg" className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700">
-              <ArrowLeft className="w-5 h-5 mr-2" />
-              {t.backHome}
-            </Button>
-          </Link>
+            <div>
+              <h4 className="font-semibold mb-4">产品</h4>
+              <ul className="space-y-2 text-gray-400">
+                <li>
+                  <button
+                    onClick={() => window.open("https://sybaupicture.com", "_blank")}
+                    className="hover:text-white transition-colors text-left"
+                  >
+                    Sybau Picture
+                  </button>
+                </li>
+                <li>
+                  <Link href="/zh/solutions/games" className="hover:text-white transition-colors">
+                    AI互动游戏
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/zh/solutions/ecommerce" className="hover:text-white transition-colors">
+                    AI电商解决方案
+                  </Link>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h4 className="font-semibold mb-4">公司</h4>
+              <ul className="space-y-2 text-gray-400">
+                <li>
+                  <Link href="/zh/about" className="hover:text-white transition-colors">
+                    关于我们
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/zh/news" className="hover:text-white transition-colors">
+                    新闻
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/zh/contact" className="hover:text-white transition-colors">
+                    联系我们
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/zh/privacy" className="hover:text-white transition-colors">
+                    隐私政策
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/zh/terms" className="hover:text-white transition-colors">
+                    使用条款
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
+            <p className="text-gray-400 text-sm">
+              © 2025 Luckymobi Technology Limited. 版权所有。
+            </p>
+            <div className="flex items-center space-x-2 mt-4 md:mt-0">
+              <Link href="/solutions/games">
+                <Button
+                  variant="ghost"
+                  size="sm"
+                  className="text-gray-400 hover:text-white"
+                >
+                  <span className="mr-2 text-lg">🌐</span>
+                  English
+                </Button>
+              </Link>
+              <Link href="/zh">
+                <Button
+                  variant="ghost"
+                  size="sm"
+                  className="text-gray-400 hover:text-white"
+                >
+                  <span className="mr-2 text-lg">🌐</span>
+                  中文
+                </Button>
+              </Link>
+            </div>
+          </div>
         </div>
-      </div>
+      </footer>
+
     </div>
   )
 }
