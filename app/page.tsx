@@ -251,7 +251,7 @@ export default function LuckyMobiWebsite() {
               <Link href="#home" className="text-gray-700 hover:text-blue-600 transition-colors">
                 {t.nav.home}
               </Link>
-              <Link href="#about" className="text-gray-700 hover:text-blue-600 transition-colors">
+              <Link href={language === "en" ? "/en/about" : "/zh/about"} className="text-gray-700 hover:text-blue-600 transition-colors">
                 {t.nav.about}
               </Link>
               <Link href="#products" className="text-gray-700 hover:text-blue-600 transition-colors">
@@ -260,10 +260,7 @@ export default function LuckyMobiWebsite() {
               <Link href={language === "en" ? "/en/news" : "/zh/news"} className="text-gray-700 hover:text-blue-600 transition-colors">
                 {t.nav.news}
               </Link>
-              <Link href="#contact" className="text-gray-700 hover:text-blue-600 transition-colors" onClick={(e) => {
-                e.preventDefault();
-                document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
-              }}>
+              <Link href={language === "en" ? "/en/contact" : "/zh/contact"} className="text-gray-700 hover:text-blue-600 transition-colors">
                 {t.nav.contact}
               </Link>
             </div>
