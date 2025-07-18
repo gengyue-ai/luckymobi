@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10b981;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#059669;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#bg2)"/>
+  
+  <!-- Creative Tools Icons -->
+  <g fill="rgba(255,255,255,0.9)">
+    <!-- Brush/Paint -->
+    <path d="M80 80 L120 120 L110 130 L100 125 L95 135 L85 125 L90 115 L70 95 Z"/>
+    <circle cx="75" cy="75" r="8" fill="rgba(255,255,255,0.7)"/>
+    
+    <!-- Camera -->
+    <rect x="180" y="90" width="40" height="30" rx="5" fill="none" stroke="rgba(255,255,255,0.9)" stroke-width="3"/>
+    <circle cx="200" cy="105" r="8" fill="none" stroke="rgba(255,255,255,0.9)" stroke-width="2"/>
+    <rect x="190" y="85" width="10" height="5" rx="2" fill="rgba(255,255,255,0.9)"/>
+    
+    <!-- Palette -->
+    <ellipse cx="320" cy="100" rx="25" ry="15" fill="none" stroke="rgba(255,255,255,0.9)" stroke-width="3"/>
+    <circle cx="310" cy="95" r="3" fill="#ff6b6b"/>
+    <circle cx="325" cy="90" r="3" fill="#4ecdc4"/>
+    <circle cx="315" cy="110" r="3" fill="#ffe66d"/>
+    <circle cx="330" cy="105" r="3" fill="#ff8b94"/>
+  </g>
+  
+  <!-- Statistics -->
+  <g fill="white" font-family="Arial, sans-serif">
+    <text x="200" y="160" text-anchor="middle" font-size="36" font-weight="bold">125,000+</text>
+    <text x="200" y="180" text-anchor="middle" font-size="16">Creations</text>
+  </g>
+  
+  <!-- Growth Chart -->
+  <g fill="none" stroke="rgba(255,255,255,0.8)" stroke-width="2">
+    <polyline points="50,220 80,210 120,195 160,180 200,165 240,150 280,140 320,130 350,120"/>
+    <circle cx="80" cy="210" r="3" fill="white"/>
+    <circle cx="160" cy="180" r="3" fill="white"/>
+    <circle cx="240" cy="150" r="3" fill="white"/>
+    <circle cx="320" cy="130" r="3" fill="white"/>
+  </g>
+  
+  <!-- Title -->
+  <text x="200" y="250" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="18" font-weight="bold">
+    Sybau Picture Milestone
+  </text>
+</svg>

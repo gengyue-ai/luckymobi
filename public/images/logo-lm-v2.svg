@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- 渐变定义 -->
+    <linearGradient id="primaryGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3B82F6"/>
+      <stop offset="50%" style="stop-color:#8B5CF6"/>
+      <stop offset="100%" style="stop-color:#EC4899"/>
+    </linearGradient>
+    
+    <!-- 阴影滤镜 -->
+    <filter id="dropShadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="2" dy="4" stdDeviation="3" flood-color="#000000" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+  
+  <!-- 外圆背景 -->
+  <circle cx="60" cy="60" r="56" fill="url(#primaryGradient)" filter="url(#dropShadow)"/>
+  
+  <!-- 内圆装饰 -->
+  <circle cx="60" cy="60" r="48" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+  
+  <!-- L 字母 -->
+  <path d="M 25 35 L 25 85 L 50 85 L 50 75 L 35 75 L 35 35 Z" 
+        fill="white" 
+        stroke="none"/>
+  
+  <!-- M 字母 - 重新设计 -->
+  <g fill="white" stroke="none">
+    <!-- M 的左竖线 -->
+    <rect x="55" y="35" width="8" height="50"/>
+    <!-- M 的右竖线 -->
+    <rect x="87" y="35" width="8" height="50"/>
+    <!-- M 的左斜线 -->
+    <polygon points="63,35 75,55 67,55 63,45"/>
+    <!-- M 的右斜线 -->
+    <polygon points="87,35 75,55 83,55 87,45"/>
+    <!-- M 的中间竖线 -->
+    <rect x="71" y="55" width="8" height="30"/>
+  </g>
+  
+  <!-- 装饰性圆点 -->
+  <circle cx="45" cy="45" r="2" fill="rgba(255,255,255,0.6)"/>
+  <circle cx="75" cy="45" r="2" fill="rgba(255,255,255,0.6)"/>
+  
+  <!-- 科技感线条 -->
+  <path d="M 30 25 Q 60 20 90 25" stroke="rgba(255,255,255,0.3)" stroke-width="1" fill="none"/>
+  <path d="M 30 95 Q 60 100 90 95" stroke="rgba(255,255,255,0.3)" stroke-width="1" fill="none"/>
+</svg>

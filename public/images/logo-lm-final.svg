@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gradientBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3B82F6"/>
+      <stop offset="50%" style="stop-color:#8B5CF6"/>
+      <stop offset="100%" style="stop-color:#EC4899"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- 圆形背景 -->
+  <circle cx="60" cy="60" r="50" fill="url(#gradientBg)"/>
+  
+  <!-- L 字母 -->
+  <g fill="white">
+    <rect x="25" y="35" width="6" height="40"/>
+    <rect x="25" y="69" width="20" height="6"/>
+  </g>
+  
+  <!-- M 字母 -->
+  <g fill="white">
+    <!-- M 左竖线 -->
+    <rect x="55" y="35" width="6" height="40"/>
+    <!-- M 右竖线 -->
+    <rect x="89" y="35" width="6" height="40"/>
+    <!-- M 左斜线 -->
+    <polygon points="61,35 72,55 66,55 61,45"/>
+    <!-- M 右斜线 -->
+    <polygon points="89,35 78,55 84,55 89,45"/>
+    <!-- M 中间竖线 -->
+    <rect x="75" y="55" width="6" height="20"/>
+  </g>
+</svg>

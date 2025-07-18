@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="compactGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1E3A8A"/>
+      <stop offset="50%" style="stop-color:#3B82F6"/>
+      <stop offset="100%" style="stop-color:#8B5CF6"/>
+    </linearGradient>
+    
+    <radialGradient id="compactHighlight" cx="30%" cy="30%" r="70%">
+      <stop offset="0%" style="stop-color:#FFFFFF" stop-opacity="0.6"/>
+      <stop offset="100%" style="stop-color:#FFFFFF" stop-opacity="0.1"/>
+    </radialGradient>
+  </defs>
+  
+  <!-- 圆角方形背景 -->
+  <rect x="2" y="2" width="36" height="36" rx="10" fill="url(#compactGradient)"/>
+  
+  <!-- LM 字母 - 高辨识度设计 -->
+  <g fill="white" stroke="none">
+    <!-- L 字母 -->
+    <rect x="8" y="10" width="3" height="20" rx="0.5"/>
+    <rect x="8" y="27" width="10" height="3" rx="0.5"/>
+    
+    <!-- M 字母 - 清晰设计 -->
+    <!-- 左竖线 -->
+    <rect x="22" y="10" width="3" height="20" rx="0.5"/>
+    <!-- 右竖线 -->
+    <rect x="32" y="10" width="3" height="20" rx="0.5"/>
+    <!-- 左斜线 -->
+    <polygon points="25,10 28.5,18 27,18.5 25,14"/>
+    <!-- 右斜线 -->
+    <polygon points="32,10 28.5,18 30,18.5 32,14"/>
+    <!-- 中间竖线 -->
+    <rect x="27.5" y="18" width="2" height="12" rx="0.5"/>
+  </g>
+  
+  <!-- 高光效果 -->
+  <ellipse cx="20" cy="18" rx="12" ry="8" fill="url(#compactHighlight)" opacity="0.4"/>
+  
+  <!-- 边框装饰 -->
+  <rect x="2" y="2" width="36" height="36" rx="10" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="0.5"/>
+</svg>

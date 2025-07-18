@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="cleanGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3B82F6"/>
+      <stop offset="50%" style="stop-color:#8B5CF6"/>
+      <stop offset="100%" style="stop-color:#EC4899"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- 圆形背景 -->
+  <circle cx="60" cy="60" r="50" fill="url(#cleanGradient)"/>
+  
+  <!-- L 字母 -->
+  <g fill="white" font-family="Arial, sans-serif" font-weight="bold" font-size="48">
+    <text x="30" y="75" text-anchor="middle">L</text>
+  </g>
+  
+  <!-- M 字母 -->
+  <g fill="white" font-family="Arial, sans-serif" font-weight="bold" font-size="48">
+    <text x="78" y="75" text-anchor="middle">M</text>
+  </g>
+  
+  <!-- 装饰圆点 -->
+  <circle cx="40" cy="40" r="2" fill="rgba(255,255,255,0.6)"/>
+  <circle cx="80" cy="40" r="2" fill="rgba(255,255,255,0.6)"/>
+</svg>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuckyMobi Logo 展示</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+            padding: 2rem;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            text-align: center;
+            color: #1e293b;
+            margin-bottom: 3rem;
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+        
+        .logo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        
+        .logo-card {
+            background: white;
+            border-radius: 16px;
+            padding: 2rem;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .logo-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+        
+        .logo-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 120px;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%);
+            border-radius: 12px;
+        }
+        
+        .logo-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #1e293b;
+            margin-bottom: 0.5rem;
+        }
+        
+        .logo-description {
+            color: #64748b;
+            font-size: 0.875rem;
+            line-height: 1.5;
+        }
+        
+        .size-showcase {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            margin-top: 1rem;
+            padding: 1rem;
+            background: #f8fafc;
+            border-radius: 8px;
+        }
+        
+        .recommendation {
+            background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+            color: white;
+            padding: 1.5rem;
+            border-radius: 16px;
+            text-align: center;
+            margin-top: 2rem;
+        }
+        
+        .recommendation h2 {
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+        
+        .recommendation p {
+            opacity: 0.9;
+            line-height: 1.6;
+        }
+        
+        .badge {
+            display: inline-block;
+            background: #10b981;
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎨 LuckyMobi Logo 设计展示</h1>
+        
+        <div class="logo-grid">
+            <!-- Iconic版本 -->
+            <div class="logo-card">
+                <div class="badge">推荐</div>
+                <div class="logo-container">
+                    <img src="../public/images/logo-lm-iconic.svg" alt="Iconic Logo" style="width: 100px; height: 100px;">
+                </div>
+                <div class="logo-title">Iconic 版本</div>
+                <div class="logo-description">雷克萨斯风格设计，高辨识度，金属质感，适合品牌展示</div>
+                <div class="size-showcase">
+                    <img src="../public/images/logo-lm-iconic.svg" alt="Large" style="width: 60px; height: 60px;">
+                    <img src="../public/images/logo-lm-iconic.svg" alt="Medium" style="width: 40px; height: 40px;">
+                    <img src="../public/images/logo-lm-iconic.svg" alt="Small" style="width: 24px; height: 24px;">
+                </div>
+            </div>
+            
+            <!-- Premium版本 -->
+            <div class="logo-card">
+                <div class="logo-container">
+                    <img src="../public/images/logo-lm-premium.svg" alt="Premium Logo" style="width: 100px; height: 100px;">
+                </div>
+                <div class="logo-title">Premium 版本</div>
+                <div class="logo-description">豪华感设计，渐变色彩，高光效果，适合高端场合</div>
+                <div class="size-showcase">
+                    <img src="../public/images/logo-lm-premium.svg" alt="Large" style="width: 60px; height: 60px;">
+                    <img src="../public/images/logo-lm-premium.svg" alt="Medium" style="width: 40px; height: 40px;">
+                    <img src="../public/images/logo-lm-premium.svg" alt="Small" style="width: 24px; height: 24px;">
+                </div>
+            </div>
+            
+            <!-- Compact版本 -->
+            <div class="logo-card">
+                <div class="badge">导航栏推荐</div>
+                <div class="logo-container">
+                    <img src="../public/images/logo-lm-compact.svg" alt="Compact Logo" style="width: 100px; height: 100px;">
+                </div>
+                <div class="logo-title">Compact 版本</div>
+                <div class="logo-description">简洁设计，小尺寸清晰，适合导航栏和页脚使用</div>
+                <div class="size-showcase">
+                    <img src="../public/images/logo-lm-compact.svg" alt="Large" style="width: 60px; height: 60px;">
+                    <img src="../public/images/logo-lm-compact.svg" alt="Medium" style="width: 40px; height: 40px;">
+                    <img src="../public/images/logo-lm-compact.svg" alt="Small" style="width: 24px; height: 24px;">
+                </div>
+            </div>
+            
+            <!-- Clean版本 -->
+            <div class="logo-card">
+                <div class="logo-container">
+                    <img src="../public/images/logo-lm-clean.svg" alt="Clean Logo" style="width: 100px; height: 100px;">
+                </div>
+                <div class="logo-title">Clean 版本</div>
+                <div class="logo-description">使用系统字体，简洁清晰，但小尺寸时可能不够清晰</div>
+                <div class="size-showcase">
+                    <img src="../public/images/logo-lm-clean.svg" alt="Large" style="width: 60px; height: 60px;">
+                    <img src="../public/images/logo-lm-clean.svg" alt="Medium" style="width: 40px; height: 40px;">
+                    <img src="../public/images/logo-lm-clean.svg" alt="Small" style="width: 24px; height: 24px;">
+                </div>
+            </div>
+            
+            <!-- Final版本 -->
+            <div class="logo-card">
+                <div class="logo-container">
+                    <img src="../public/images/logo-lm-final.svg" alt="Final Logo" style="width: 100px; height: 100px;">
+                </div>
+                <div class="logo-title">Final 版本</div>
+                <div class="logo-description">几何化设计，清晰的 LM 字母，适合多种场合</div>
+                <div class="size-showcase">
+                    <img src="../public/images/logo-lm-final.svg" alt="Large" style="width: 60px; height: 60px;">
+                    <img src="../public/images/logo-lm-final.svg" alt="Medium" style="width: 40px; height: 40px;">
+                    <img src="../public/images/logo-lm-final.svg" alt="Small" style="width: 24px; height: 24px;">
+                </div>
+            </div>
+            
+            <!-- 原始版本 -->
+            <div class="logo-card">
+                <div class="logo-container">
+                    <img src="../public/images/logo-lm.svg" alt="Original Logo" style="width: 100px; height: 100px;">
+                </div>
+                <div class="logo-title">原始版本</div>
+                <div class="logo-description">最初设计，包含装饰元素，比较复杂</div>
+                <div class="size-showcase">
+                    <img src="../public/images/logo-lm.svg" alt="Large" style="width: 60px; height: 60px;">
+                    <img src="../public/images/logo-lm.svg" alt="Medium" style="width: 40px; height: 40px;">
+                    <img src="../public/images/logo-lm.svg" alt="Small" style="width: 24px; height: 24px;">
+                </div>
+            </div>
+        </div>
+        
+        <div class="recommendation">
+            <h2>🏆 设计建议</h2>
+            <p>
+                <strong>Iconic 版本</strong> 最适合 LuckyMobi 的品牌定位。它具有：<br>
+                • 高辨识度 - 类似雷克萨斯的设计理念<br>
+                • 金属质感 - 体现科技感和专业性<br>
+                • 清晰的 LM 字母 - 即使在小尺寸下也清晰可见<br>
+                • 现代感 - 符合 AI 科技公司的品牌形象<br>
+                • 可扩展性 - 适合各种场合和媒体应用
+            </p>
+        </div>
+    </div>
+</body>
+</html>

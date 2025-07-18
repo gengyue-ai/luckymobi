@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="simpleGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3B82F6"/>
+      <stop offset="100%" style="stop-color:#8B5CF6"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- 圆角方形背景 -->
+  <rect x="2" y="2" width="36" height="36" rx="8" fill="url(#simpleGradient)"/>
+  
+  <!-- L 字母 -->
+  <path d="M 8 10 L 8 30 L 18 30 L 18 26 L 12 26 L 12 10 Z" fill="white"/>
+  
+  <!-- M 字母 - 清晰版本 -->
+  <g fill="white">
+    <!-- M 的左竖线 -->
+    <rect x="20" y="10" width="3" height="20"/>
+    <!-- M 的右竖线 -->
+    <rect x="33" y="10" width="3" height="20"/>
+    <!-- M 的左斜线 -->
+    <polygon points="23,10 28,18 25,18 23,14"/>
+    <!-- M 的右斜线 -->
+    <polygon points="33,10 28,18 31,18 33,14"/>
+    <!-- M 的中间短竖线 -->
+    <rect x="26.5" y="18" width="3" height="12"/>
+  </g>
+</svg>

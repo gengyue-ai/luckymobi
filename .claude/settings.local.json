@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(rm:*)",
+      "Bash(mkdir:*)",
+      "Bash(touch:*)",
+      "Bash(pnpm install:*)",
+      "Bash(npm install:*)",
+      "Bash(npm run dev:*)",
+      "Bash(pnpm dev:*)",
+      "Bash(curl:*)",
+      "Bash(npm run lint)",
+      "Bash(npm run type-check:*)",
+      "Bash(npm run build:*)",
+      "Bash(npm start)",
+      "Bash(start http://localhost:3001/solutions/ecommerce)",
+      "Bash(pkill:*)",
+      "Bash(pnpm build:*)"
+    ],
+    "deny": []
+  }
+}
