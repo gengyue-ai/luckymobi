@@ -3,7 +3,8 @@
 import { useState } from 'react'
 import { Button } from '@/components/ui/button'
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet'
-import { Menu, X, Globe, Sparkles } from 'lucide-react'
+import { NavLogo } from '@/components/logo'
+import { Menu, X, Globe } from 'lucide-react'
 import Link from 'next/link'
 
 interface MobileNavProps {
@@ -53,12 +54,7 @@ export function MobileNav({ translations, language, toggleLanguage }: MobileNavP
         <div className="flex flex-col h-full">
           {/* Header */}
           <div className="flex items-center justify-between pb-4 border-b">
-            <div className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg flex items-center justify-center">
-                <Sparkles className="w-5 h-5 text-white" />
-              </div>
-              <span className="text-xl font-bold text-gray-900">LuckyMobi</span>
-            </div>
+            <NavLogo />
             <Button
               variant="ghost"
               size="sm"
