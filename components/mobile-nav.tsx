@@ -16,20 +16,28 @@ export function MobileNav({ translations, language, toggleLanguage }: MobileNavP
   const [isOpen, setIsOpen] = useState(false)
   const t = translations
 
-  const navItems = [
-    { href: '#home', label: t.nav.home },
-    { href: '#about', label: t.nav.about },
-    { href: '#products', label: t.nav.products },
-    { href: '#news', label: t.nav.news },
-    { href: '#contact', label: t.nav.contact },
-  ]
+  const getNavItems = () => {
+    const prefix = language === 'en' ? '/en' : '/zh'
+    return [
+      { href: `${prefix}#home`, label: t.nav.home, isAnchor: true },
+      { href: `${prefix}/about`, label: t.nav.about, isAnchor: false },
+      { href: `${prefix}#products`, label: t.nav.products, isAnchor: true },
+      { href: `${prefix}/news`, label: t.nav.news, isAnchor: false },
+      { href: `${prefix}/contact`, label: t.nav.contact, isAnchor: false },
+    ]
+  }
 
-  const handleNavClick = (href: string) => {
+  const handleNavClick = (href: string, isAnchor: boolean) => {
     setIsOpen(false)
-    // Smooth scroll to section
-    const element = document.querySelector(href)
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' })
+    if (isAnchor) {
+      // Smooth scroll to section on same page
+      const element = document.querySelector(href.split('#')[1] ? `#${href.split('#')[1]}` : href)
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' })
+      }
+    } else {
+      // Navigate to different page
+      window.location.href = href
     }
   }
 
@@ -63,10 +71,10 @@ export function MobileNav({ translations, language, toggleLanguage }: MobileNavP
           {/* Navigation Links */}
           <nav className="flex-1 py-6">
             <ul className="space-y-4">
-              {navItems.map((item) => (
+              {getNavItems().map((item) => (
                 <li key={item.href}>
                   <button
-                    onClick={() => handleNavClick(item.href)}
+                    onClick={() => handleNavClick(item.href, item.isAnchor)}
                     className="w-full text-left px-4 py-3 text-lg font-medium text-gray-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors"
                   >
                     {item.label}
