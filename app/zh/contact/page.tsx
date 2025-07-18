@@ -62,13 +62,13 @@ export default function ChineseContactPage() {
             <NavLogo />
 
             <div className="hidden md:flex items-center space-x-8">
-              <Link href="/zh#home" className="text-gray-700 hover:text-blue-600 transition-colors">
+              <Link href="/zh" className="text-gray-700 hover:text-blue-600 transition-colors">
                 {t.nav.home}
               </Link>
               <Link href="/zh/about" className="text-gray-700 hover:text-blue-600 transition-colors">
                 {t.nav.about}
               </Link>
-              <Link href="/zh#products" className="text-gray-700 hover:text-blue-600 transition-colors">
+              <Link href="/zh/products" className="text-gray-700 hover:text-blue-600 transition-colors">
                 {t.nav.products}
               </Link>
               <Link href="/zh/news" className="text-gray-700 hover:text-blue-600 transition-colors">

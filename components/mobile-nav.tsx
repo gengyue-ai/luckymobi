@@ -20,9 +20,9 @@ export function MobileNav({ translations, language, toggleLanguage }: MobileNavP
   const getNavItems = () => {
     const prefix = language === 'en' ? '/en' : '/zh'
     return [
-      { href: `${prefix}#home`, label: t.nav.home, isAnchor: true },
+      { href: `${prefix}`, label: t.nav.home, isAnchor: false },
       { href: `${prefix}/about`, label: t.nav.about, isAnchor: false },
-      { href: `${prefix}#products`, label: t.nav.products, isAnchor: true },
+      { href: `${prefix}/products`, label: t.nav.products, isAnchor: false },
       { href: `${prefix}/news`, label: t.nav.news, isAnchor: false },
       { href: `${prefix}/contact`, label: t.nav.contact, isAnchor: false },
     ]

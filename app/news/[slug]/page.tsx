@@ -1007,7 +1007,7 @@ export default function NewsDetail() {
             <NavLogo />
 
             <div className="hidden md:flex items-center space-x-8">
-              <Link href={language === "en" ? "/en#home" : "/zh#home"} className="text-gray-700 hover:text-blue-600 transition-colors">
+              <Link href={language === "en" ? "/en" : "/zh"} className="text-gray-700 hover:text-blue-600 transition-colors">
                 {language === "en" ? "Home" : "首页"}
               </Link>
               <Link href={language === "en" ? "/en/about" : "/zh/about"} className="text-gray-700 hover:text-blue-600 transition-colors">

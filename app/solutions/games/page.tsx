@@ -230,22 +230,19 @@ export default function AIGames() {
             <NavLogo />
 
             <div className="hidden md:flex items-center space-x-8">
-              <Link href="/en#home" className="text-gray-700 hover:text-blue-600 transition-colors">
+              <Link href="/en" className="text-gray-700 hover:text-blue-600 transition-colors">
                 Home
               </Link>
-              <Link href="/en#about" className="text-gray-700 hover:text-blue-600 transition-colors">
+              <Link href="/en/about" className="text-gray-700 hover:text-blue-600 transition-colors">
                 About Us
               </Link>
-              <Link href="/en#products" className="text-gray-700 hover:text-blue-600 transition-colors">
+              <Link href="/en/products" className="text-gray-700 hover:text-blue-600 transition-colors">
                 Products & Services
               </Link>
               <Link href="/en/news" className="text-gray-700 hover:text-blue-600 transition-colors">
                 News Center
               </Link>
-              <Link href="/en#contact" className="text-gray-700 hover:text-blue-600 transition-colors" onClick={(e) => {
-                e.preventDefault();
-                window.location.href = '/en#contact';
-              }}>
+              <Link href="/en/contact" className="text-gray-700 hover:text-blue-600 transition-colors">
                 Contact Us
               </Link>
             </div>
@@ -625,7 +622,7 @@ export default function AIGames() {
               <h4 className="font-semibold mb-4">Company</h4>
               <ul className="space-y-2 text-gray-400">
                 <li>
-                  <Link href="/en#about" className="hover:text-white transition-colors">
+                  <Link href="/en/about" className="hover:text-white transition-colors">
                     About Us
                   </Link>
                 </li>
@@ -635,7 +632,7 @@ export default function AIGames() {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/en#contact" className="hover:text-white transition-colors">
+                  <Link href="/en/contact" className="hover:text-white transition-colors">
                     Contact
                   </Link>
                 </li>

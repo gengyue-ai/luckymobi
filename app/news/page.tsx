@@ -103,22 +103,19 @@ export default function NewsCenter() {
             </div>
 
             <div className="hidden md:flex items-center space-x-8">
-              <Link href={language === "en" ? "/en#home" : "/zh#home"} className="text-gray-700 hover:text-blue-600 transition-colors">
+              <Link href={language === "en" ? "/en" : "/zh"} className="text-gray-700 hover:text-blue-600 transition-colors">
                 {language === "en" ? "Home" : "首页"}
               </Link>
-              <Link href={language === "en" ? "/en#about" : "/zh#about"} className="text-gray-700 hover:text-blue-600 transition-colors">
+              <Link href={language === "en" ? "/en/about" : "/zh/about"} className="text-gray-700 hover:text-blue-600 transition-colors">
                 {language === "en" ? "About Us" : "关于我们"}
               </Link>
-              <Link href={language === "en" ? "/en#products" : "/zh#products"} className="text-gray-700 hover:text-blue-600 transition-colors">
+              <Link href={language === "en" ? "/en/products" : "/zh/products"} className="text-gray-700 hover:text-blue-600 transition-colors">
                 {language === "en" ? "Products & Services" : "产品与服务"}
               </Link>
               <Link href={language === "en" ? "/en/news" : "/zh/news"} className="text-gray-700 hover:text-blue-600 transition-colors">
                 {language === "en" ? "News Center" : "新闻中心"}
               </Link>
-              <Link href={language === "en" ? "/en#contact" : "/zh#contact"} className="text-gray-700 hover:text-blue-600 transition-colors" onClick={(e) => {
-                e.preventDefault();
-                window.location.href = language === "en" ? '/en#contact' : '/zh#contact';
-              }}>
+              <Link href={language === "en" ? "/en/contact" : "/zh/contact"} className="text-gray-700 hover:text-blue-600 transition-colors">
                 {language === "en" ? "Contact Us" : "联系我们"}
               </Link>
             </div>
@@ -292,7 +289,7 @@ export default function NewsCenter() {
               <h4 className="font-semibold mb-4">{language === "en" ? "Company" : "公司"}</h4>
               <ul className="space-y-2 text-gray-400">
                 <li>
-                  <Link href={language === "en" ? "/en#about" : "/zh#about"} className="hover:text-white transition-colors">
+                  <Link href={language === "en" ? "/en/about" : "/zh/about"} className="hover:text-white transition-colors">
                     {language === "en" ? "About Us" : "关于我们"}
                   </Link>
                 </li>
@@ -302,7 +299,7 @@ export default function NewsCenter() {
                   </Link>
                 </li>
                 <li>
-                  <Link href={language === "en" ? "/en#contact" : "/zh#contact"} className="hover:text-white transition-colors">
+                  <Link href={language === "en" ? "/en/contact" : "/zh/contact"} className="hover:text-white transition-colors">
                     {language === "en" ? "Contact" : "联系我们"}
                   </Link>
                 </li>

@@ -127,7 +127,7 @@ export default function ChineseHomePage() {
             <NavLogo />
 
             <div className="hidden md:flex items-center space-x-8">
-              <Link href="/zh#home" className="text-gray-700 hover:text-blue-600 transition-colors">
+              <Link href="/zh" className="text-gray-700 hover:text-blue-600 transition-colors">
                 {t.nav.home}
               </Link>
               <Link href="/zh/about" className="text-gray-700 hover:text-blue-600 transition-colors">
@@ -657,7 +657,7 @@ export default function ChineseHomePage() {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/zh#news" className="hover:text-white transition-colors">
+                  <Link href="/zh/news" className="hover:text-white transition-colors">
                     {t.footer.news}
                   </Link>
                 </li>

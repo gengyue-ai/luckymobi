@@ -404,37 +404,6 @@ export default function EnglishProductsPage() {
           </div>
         </motion.section>
 
-        {/* Call to Action */}
-        <motion.section
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 1 }}
-          className="text-center"
-        >
-          <Card className="bg-gradient-to-r from-blue-600 to-purple-600 text-white border-0">
-            <CardContent className="p-8">
-              <h2 className="text-3xl font-bold mb-4">Ready to Start Your AI Journey?</h2>
-              <p className="text-xl mb-8 text-blue-100">
-                Contact our expert team to learn how to integrate AI technology into your business
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Link href="/en/contact">
-                  <Button size="lg" variant="secondary" className="bg-white text-blue-600 hover:bg-gray-100">
-                    Contact Us
-                  </Button>
-                </Link>
-                <Button
-                  size="lg"
-                  variant="outline"
-                  className="border-white text-white hover:bg-white hover:text-blue-600"
-                  onClick={() => window.open("https://sybaupicture.com", "_blank")}
-                >
-                  Try Our Products
-                </Button>
-              </div>
-            </CardContent>
-          </Card>
-        </motion.section>
       </div>
 
       {/* Footer */}

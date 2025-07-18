@@ -204,22 +204,19 @@ export default function EcommerceSolutionsZH() {
             </div>
 
             <div className="hidden md:flex items-center space-x-8">
-              <Link href="/zh#home" className="text-gray-700 hover:text-blue-600 transition-colors">
+              <Link href="/zh" className="text-gray-700 hover:text-blue-600 transition-colors">
                 首页
               </Link>
-              <Link href="/zh#about" className="text-gray-700 hover:text-blue-600 transition-colors">
+              <Link href="/zh/about" className="text-gray-700 hover:text-blue-600 transition-colors">
                 关于我们
               </Link>
-              <Link href="/zh#products" className="text-gray-700 hover:text-blue-600 transition-colors">
+              <Link href="/zh/products" className="text-gray-700 hover:text-blue-600 transition-colors">
                 产品与服务
               </Link>
               <Link href="/zh/news" className="text-gray-700 hover:text-blue-600 transition-colors">
                 新闻中心
               </Link>
-              <Link href="/zh#contact" className="text-gray-700 hover:text-blue-600 transition-colors" onClick={(e) => {
-                e.preventDefault();
-                window.location.href = '/zh#contact';
-              }}>
+              <Link href="/zh/contact" className="text-gray-700 hover:text-blue-600 transition-colors">
                 联系我们
               </Link>
             </div>
@@ -791,7 +788,7 @@ export default function EcommerceSolutionsZH() {
               <h4 className="font-semibold mb-4">公司</h4>
               <ul className="space-y-2 text-gray-400">
                 <li>
-                  <Link href="/zh#about" className="hover:text-white transition-colors">
+                  <Link href="/zh/about" className="hover:text-white transition-colors">
                     关于我们
                   </Link>
                 </li>
@@ -801,7 +798,7 @@ export default function EcommerceSolutionsZH() {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/zh#contact" className="hover:text-white transition-colors">
+                  <Link href="/zh/contact" className="hover:text-white transition-colors">
                     联系我们
                   </Link>
                 </li>

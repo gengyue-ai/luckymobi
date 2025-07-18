@@ -76,7 +76,7 @@ export default function ChineseNewsCenter() {
             <NavLogo />
 
             <div className="hidden md:flex items-center space-x-8">
-              <Link href="/zh#home" className="text-gray-700 hover:text-blue-600 transition-colors">
+              <Link href="/zh" className="text-gray-700 hover:text-blue-600 transition-colors">
                 首页
               </Link>
               <Link href="/zh/about" className="text-gray-700 hover:text-blue-600 transition-colors">

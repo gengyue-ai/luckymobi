@@ -403,37 +403,6 @@ export default function ChineseProductsPage() {
           </div>
         </motion.section>
 
-        {/* Call to Action */}
-        <motion.section
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 1 }}
-          className="text-center"
-        >
-          <Card className="bg-gradient-to-r from-blue-600 to-purple-600 text-white border-0">
-            <CardContent className="p-8">
-              <h2 className="text-3xl font-bold mb-4">准备开始您的AI之旅？</h2>
-              <p className="text-xl mb-8 text-blue-100">
-                联系我们的专家团队，了解如何将AI技术集成到您的业务中
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Link href="/zh/contact">
-                  <Button size="lg" variant="secondary" className="bg-white text-blue-600 hover:bg-gray-100">
-                    联系我们
-                  </Button>
-                </Link>
-                <Button
-                  size="lg"
-                  variant="outline"
-                  className="border-white text-white hover:bg-white hover:text-blue-600"
-                  onClick={() => window.open("https://sybaupicture.com", "_blank")}
-                >
-                  体验产品
-                </Button>
-              </div>
-            </CardContent>
-          </Card>
-        </motion.section>
       </div>
 
       {/* Footer */}

@@ -244,13 +244,13 @@ export default function LuckyMobiWebsite() {
             <NavLogo />
 
             <div className="hidden md:flex items-center space-x-8">
-              <Link href="#home" className="text-gray-700 hover:text-blue-600 transition-colors">
+              <Link href={language === "en" ? "/en" : "/zh"} className="text-gray-700 hover:text-blue-600 transition-colors">
                 {t.nav.home}
               </Link>
               <Link href={language === "en" ? "/en/about" : "/zh/about"} className="text-gray-700 hover:text-blue-600 transition-colors">
                 {t.nav.about}
               </Link>
-              <Link href="#products" className="text-gray-700 hover:text-blue-600 transition-colors">
+              <Link href={language === "en" ? "/en/products" : "/zh/products"} className="text-gray-700 hover:text-blue-600 transition-colors">
                 {t.nav.products}
               </Link>
               <Link href={language === "en" ? "/en/news" : "/zh/news"} className="text-gray-700 hover:text-blue-600 transition-colors">
@@ -808,17 +808,17 @@ export default function LuckyMobiWebsite() {
               <h4 className="font-semibold mb-4">{t.footer.company}</h4>
               <ul className="space-y-2 text-gray-400">
                 <li>
-                  <Link href="#about" className="hover:text-white transition-colors">
+                  <Link href={language === "en" ? "/en/about" : "/zh/about"} className="hover:text-white transition-colors">
                     {t.footer.aboutUs}
                   </Link>
                 </li>
                 <li>
-                  <Link href="#news" className="hover:text-white transition-colors">
+                  <Link href={language === "en" ? "/en/news" : "/zh/news"} className="hover:text-white transition-colors">
                     {t.footer.news}
                   </Link>
                 </li>
                 <li>
-                  <Link href="#contact" className="hover:text-white transition-colors">
+                  <Link href={language === "en" ? "/en/contact" : "/zh/contact"} className="hover:text-white transition-colors">
                     {t.footer.contact}
                   </Link>
                 </li>
